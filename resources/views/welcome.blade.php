@@ -1,99 +1,111 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+<head>
+@include('material_partials.heads')
+</head>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+<body class="landing-page sidebar-collapse">
+<!-- Extra details for Live View on GitHub Pages -->
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html@id=GTM-NKDMSK6" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+@include('material_partials.header')
+<div class="page-header header-filter" data-parallax="true" style="background-image: url('{{asset('assets/img/bg8.jpg')}}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="title">Your Story Starts With Us.</h1>
+                <h4>Every landing page needs a small description after the big bold title, that&apos;s why we added this text here. Add here all the information that can make you or your product create the first impression.</h4>
+                <br>
+                <a href="https://www.youtube.com/watch@v=dQw4w9WgXcQ" target="_blank" class="btn btn-danger btn-raised btn-lg">
+                    <i class="fa fa-play"></i> Watch video
+                </a>
             </div>
         </div>
-    </body>
+    </div>
+</div>
+
+<!--   Core JS Files   -->
+<script src="{{asset('assets/js/core/jquery.min.js')}}" type="text/javascript"></script>
+<script src="{{asset('assets/js/core/popper.min.js')}}" type="text/javascript"></script>
+<script src="{{asset('assets/js/core/bootstrap-material-design.min.js')}}" type="text/javascript"></script>
+<script src="{{asset('assets/js/plugins/moment.min.js')}}"></script>
+<!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+<script src="{{asset('assets/js/plugins/bootstrap-datetimepicker.js')}}" type="text/javascript"></script>
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="{{asset('assets/js/plugins/nouislider.min.js')}}" type="text/javascript"></script>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<!--	Plugin for Sharrre btn -->
+<script src="{{asset('assets/js/plugins/jquery.sharrre.js')}}" type="text/javascript"></script>
+<!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
+<script src="{{asset('assets/js/plugins/bootstrap-tagsinput.js')}}"></script>
+<!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+<script src="{{asset('assets/js/plugins/bootstrap-selectpicker.js')}}" type="text/javascript"></script>
+<!--	Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+<script src="{{asset('assets/js/plugins/jasny-bootstrap.min.js')}}" type="text/javascript"></script>
+<!--	Plugin for Small Gallery in Product Page -->
+<script src="{{asset('assets/js/plugins/jquery.flexisel.js')}}" type="text/javascript"></script>
+<!-- Plugins for presentation and navigation  -->
+<script src="{{asset('assets/demo/modernizr.js')}}" type="text/javascript"></script>
+<script src="{{asset('assets/demo/vertical-nav.js')}}" type="text/javascript"></script>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+<script src="{{asset('assets/js/material-kit.min.js')}}@v=2.1.1" type="text/javascript"></script>
+<!--ipt>
+  $(document).ready(function() {
+
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-46172202-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+
+    // Facebook Pixel Code Don't Delete
+    ! function(f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function() {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window,
+      document, 'script', '//connect.facebook.net/en_US/fbevents.js');
+
+    try {
+      fbq('init', '111649226022273');
+      fbq('track', "PageView");
+
+    } catch (err) {
+      console.log('Facebook Track Error:', err);
+    }
+
+  });
+</scri-->
+<noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr@id=111649226022273&ev=PageView&noscript=1" />
+</noscript>
+</body>
+
 </html>
