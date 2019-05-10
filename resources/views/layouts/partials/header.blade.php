@@ -461,12 +461,18 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
                                         <svg class="olymp-logout-icon">
                                             <use xlink:href="svg-icons/sprites/icons.svg#olymp-logout-icon"></use>
                                         </svg>
 
-                                        <span>Log Out</span>
+                                        <span >Log Out</span>
+
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            @csrf
+                                        </form>
                                     </a>
                                 </li>
                             </ul>
@@ -549,12 +555,12 @@
                 </div>
                 <a href="02-ProfilePage.html" class="author-name fn">
                     <div class="author-title">
-                        James Spiegel
+                        {{ Auth::user()->name }}
                         <svg class="olymp-dropdown-arrow-icon">
                             <use xlink:href="svg-icons/sprites/icons.svg#olymp-dropdown-arrow-icon"></use>
                         </svg>
                     </div>
-                    <span class="author-subtitle">SPACE COWBOY</span>
+                    {{--<span class="author-subtitle">SPACE COWBOY</span>--}}
                 </a>
             </div>
 

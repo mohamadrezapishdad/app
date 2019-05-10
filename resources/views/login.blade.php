@@ -48,7 +48,7 @@
                                         <i class="material-icons">face</i>
                                         </span>
                                     </div>
-                                    <input name="username_email" type="text" class="form-control" placeholder="{{ __('Username or Email') }}">
+                                    <input name="email" type="text" class="form-control" placeholder="{{ __('Email') }}">
                                 </div>
                             </span>
                             <span class="bmd-form-group">
@@ -63,7 +63,7 @@
                             </span>
                         </div>
                         <div class="card-footer justify-content-center">
-                            <a href="#pablo" class="btn btn-rose btn-link btn-lg">Lets Go</a>
+                            <input type="submit" class="btn btn-rose btn-link btn-lg" value="Lets Go">
                         </div>
                     </div>
                 </form>

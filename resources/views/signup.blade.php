@@ -80,7 +80,17 @@
                                                 <i class="material-icons">face</i>
                                                 </span>
                                             </div>
-                                            <input name="username" type="text" class="form-control" placeholder="{{ __('Username') }}">
+                                            <input name="name" type="text" class="form-control" placeholder="{{ __('Name') }}" required >
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                <i class="material-icons">face</i>
+                                                </span>
+                                            </div>
+                                            <input name="username" type="text" class="form-control" placeholder="{{ __('Username') }}" required >
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -90,7 +100,7 @@
                                                 <i class="material-icons">mail</i>
                                                 </span>
                                             </div>
-                                            <input name="email" type="text" class="form-control" placeholder="{{ __('Email Address') }}">
+                                            <input name="email" type="text" class="form-control" placeholder="{{ __('Email Address') }}" required >
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -100,7 +110,7 @@
                                                 <i class="material-icons">lock_outline</i>
                                                 </span>
                                             </div>
-                                            <input name="password" type="password" placeholder="{{ __('Password') }}" class="form-control" />
+                                            <input name="password" type="password" placeholder="{{ __('Password') }}" required  class="form-control" />
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -110,7 +120,7 @@
                                                 <i class="material-icons">lock_outline</i>
                                                 </span>
                                             </div>
-                                            <input name="password_confirmation" type="password" placeholder="{{ __('Retype Password') }}" class="form-control" required autocomplete="new-password" />
+                                            <input name="password_confirmation" type="password" placeholder="{{ __('Retype Password') }}" required  class="form-control" required autocomplete="new-password" />
                                         </div>
                                     </div>
                                     <div class="form-check">

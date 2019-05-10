@@ -112,12 +112,12 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="https://www.creative-tim.com/product/material-kit-pro@ref=presentation" target="_blank" class="nav-link">
+                    <a href="{{asset('signin')}}" class="nav-link">
                         <i class="material-icons">fingerprint</i> Log In
                     </a>
                 </li>
                 <li class="button-container nav-item iframe-extern">
-                    <a href="https://www.creative-tim.com/product/material-kit-pro@ref=presentation" target="_blank" class="btn  btn-rose   btn-round btn-block">
+                    <a href="{{asset('signup')}}" class="btn  btn-rose   btn-round btn-block">
                         <i class="material-icons">person_add</i> Sign Up
                     </a>
                 </li>

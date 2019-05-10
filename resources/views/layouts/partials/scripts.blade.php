@@ -1,8 +1,8 @@
 <!-- JS Scripts -->
 <script src="{{asset('js/app.js')}}"></script>
-{{--<script src="js/jquery-3.2.1.js"></script>
+<script src="js/jquery-3.2.1.js"></script>
 <script src="js/jquery.appear.js"></script>
-<script src="js/jquery.mousewheel.js"></script>--}}
+<script src="js/jquery.mousewheel.js"></script>
 <script src="js/perfect-scrollbar.js"></script>
 <script src="js/jquery.matchHeight.js"></script>
 <script src="js/svgxuse.js"></script>

@@ -23,6 +23,8 @@ Route::get('/signin', function () {
     return view('login');
 });
 
+Route::resource('profiles' , 'ProfileController');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

@@ -12,7 +12,7 @@
 <link rel="canonical" href="https://www.creative-tim.com/product/material-kit-pro" />
 <!--  Social tags      -->
 <meta name="keywords" content="bootstrap 4, bootstrap 4 uit kit, bootstrap 4 kit, material, material kit, creative tim, html kit, html css template, web template, bootstrap, bootstrap 4, css3 template, frontend, responsive bootstrap template, bootstrap ui kit, responsive ui kit, premium bootstrap 4 ui kit, premium template, bootstrap 4 template">
-<meta name="description" content="Start Your Development With A Badass Bootstrap 4 UI Kit inspired by Material Design">
+<meta name="description" content="If you don't have any plan for the weekend here's the place you want to search around">
 <!-- Schema.org markup for Google+ -->
 <meta itemprop="name" content="Material Kit Pro by Creative Tim">
 <meta itemprop="description" content="Start Your Development With A Badass Bootstrap 4 UI Kit inspired by Material Design">
