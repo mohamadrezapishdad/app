@@ -24,6 +24,7 @@ Route::get('/signin', function () {
 });
 
 Route::resource('profiles' , 'ProfileController');
+Route::resource('users' , 'UserController');
 
 Auth::routes();
 

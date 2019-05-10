@@ -1030,4 +1030,4 @@
 </header>
 
 <!-- ... end Responsive Header-BP -->
-<div class="header-spacer"></div>
+<div class="header-spacer {{$head_space}}"></div>
