@@ -14,7 +14,14 @@ class CreateProfilesTable extends Migration
     public function up()
     {
         Schema::create('profiles', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id');
+            $table->integer('user_id')->unique();
+            $table->string('about_me')->nullable();
+            $table->enum('gender', ['m', 'f'])->nullable();
+            $table->date('birthday')->nullable();
+            $table->string('country')->nullable();
+            $table->string('city')->nullable();
+            $table->string('avatar_path')->nullable();
             $table->timestamps();
         });
     }
