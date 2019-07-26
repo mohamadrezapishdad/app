@@ -34,21 +34,22 @@
                 </div>
                 <div class="ui-block-content">
 
-
                     <!-- Personal Information Form  -->
 
-                    <form>
+                    <form method="POST" action="{{url('users/'. $user->id)}}">
+                        @csrf
+                        <input type="hidden" value="put" name="_method">
                         <div class="row">
 
                             <div class="col col-lg-6 col-md-6 col-sm-12 col-12">
                                 <div class="form-group label-floating">
                                     <label class="control-label">Name</label>
-                                    <input class="form-control" placeholder="" type="text" value="{{$user->name}}">
+                                    <input name="name" class="form-control" placeholder="" type="text" value="{{$user->name}}">
                                 </div>
 
                                 <div class="form-group label-floating">
                                     <label class="control-label">Your Email</label>
-                                    <input class="form-control" placeholder="" type="email" value="jspiegel@yourmail.com">
+                                    <input name="email" class="form-control" placeholder="" type="email" value="{{$user->email}}">
                                 </div>
 
                                 <div class="form-group date-time-picker label-floating">
@@ -68,7 +69,7 @@
 
                                 <div class="form-group label-floating">
                                     <label class="control-label">Your Website</label>
-                                    <input class="form-control" placeholder="" type="email" value="daydreamzagency.com">
+                                    <input class="form-control" placeholder=""  value="daydreamzagency.com">
                                 </div>
 
 
@@ -113,9 +114,9 @@
 
                                 <div class="form-group label-floating is-select">
                                     <label class="control-label">Your Gender</label>
-                                    <select class="selectpicker form-control">
-                                        <option value="MA">Male</option>
-                                        <option value="FE">Female</option>
+                                    <select name="gender" class="selectpicker form-control">
+                                        <option value="m">Male</option>
+                                        <option value="f">Female</option>
                                     </select>
                                 </div>
 
@@ -180,6 +181,9 @@
                             </div>
                             <div class="col col-lg-6 col-md-6 col-sm-12 col-12">
                                 <button class="btn btn-primary btn-lg full-width">Save all Changes</button>
+                            </div>
+                            <div class="col col-lg-6 col-md-6 col-sm-12 col-12">
+                                <input type="submit" class="btn btn-breez" value="Update">
                             </div>
 
                         </div>

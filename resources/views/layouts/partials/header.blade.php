@@ -441,7 +441,7 @@
 
                             <ul class="account-settings">
                                 <li>
-                                    <a href="29-YourAccount-AccountSettings.html">
+                                    <a href="{{url('users'. Auth::user()->id .'/edit')}}">
 
                                         <svg class="olymp-menu-icon">
                                             <use xlink:href="svg-icons/sprites/icons.svg#olymp-menu-icon"></use>

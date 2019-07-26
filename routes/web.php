@@ -23,7 +23,10 @@ Route::get('/signin', function () {
     return view('login');
 });
 
-Route::resource('profiles' , 'ProfileController');
+Route::get('/test', function () {
+    return view('test');
+});
+
 Route::resource('users' , 'UserController');
 
 Auth::routes();
