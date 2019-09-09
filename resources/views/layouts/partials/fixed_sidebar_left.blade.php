@@ -20,13 +20,22 @@
                     </a>
                 </li>
                 <li>
-                    <a href="03-Newsfeed.html">
+                    <a href="{{url('events')}}">
                         <svg class="olymp-newsfeed-icon left-menu-icon" data-toggle="tooltip" data-placement="right"
                              data-original-title="NEWSFEED">
                             <use xlink:href="{{asset('svg-icons/sprites/icons.svg#olymp-newsfeed-icon')}}"></use>
                         </svg>
                     </a>
                 </li>
+                <li>
+                    <a data-toggle="modal" data-target="#createEvent" class="pointer-courser">
+                        <svg class="olymp-newsfeed-icon left-menu-icon" data-toggle="tooltip" data-placement="right"
+                             data-original-title="CREATE EVENT">
+                            <use xlink:href="{{asset('svg-icons/sprites/icons.svg#olymp-plus-icon')}}"></use>
+                        </svg>
+                    </a>
+                </li>
+                <create-event-menu></create-event-menu>
                 <li>
                     <a href="16-FavPagesFeed.html">
                         <svg class="olymp-star-icon left-menu-icon" data-toggle="tooltip" data-placement="right"
@@ -124,12 +133,21 @@
                     </a>
                 </li>
                 <li>
-                    <a href="03-Newsfeed.html">
+                    <a href="{{url('events')}}">
                         <svg class="olymp-newsfeed-icon left-menu-icon" data-toggle="tooltip" data-placement="right"
                              data-original-title="NEWSFEED">
                             <use xlink:href="{{asset('svg-icons/sprites/icons.svg#olymp-newsfeed-icon')}}"></use>
                         </svg>
                         <span class="left-menu-title">Newsfeed</span>
+                    </a>
+                </li>
+                <li>
+                    <a data-toggle="modal" data-target="#createEvent" class="pointer-courser">
+                        <svg class="olymp-newsfeed-icon left-menu-icon" data-toggle="tooltip" data-placement="right"
+                             data-original-title="CREATE EVENT">
+                            <use xlink:href="{{asset('svg-icons/sprites/icons.svg#olymp-plus-icon')}}"></use>
+                        </svg>
+                        <span class="left-menu-title">Create Event</span>
                     </a>
                 </li>
                 <li>

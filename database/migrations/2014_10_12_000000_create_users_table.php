@@ -23,12 +23,8 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->rememberToken();
 
-            $table->string('about_me')->nullable();
-            $table->enum('gender', ['m', 'f'])->nullable();
-            $table->date('birthday')->nullable();
-            $table->string('country')->nullable();
-            $table->string('city')->nullable();
-            $table->string('avatar_path')->nullable();
+            $table->text('tokken')->nullable();
+
             $table->timestamps();
         });
     }

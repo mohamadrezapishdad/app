@@ -32,3 +32,17 @@ Route::resource('users' , 'UserController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/events', function (){
+    $user = \App\User::find(1);
+    \Illuminate\Support\Facades\Auth::login($user);
+    return view('events.index');
+});
+
+Route::get('/users/me/show', function (){
+    return view('users.show');
+});
+
+Route::get('/users/{user}', 'UserController@show');
+Route::get('/users', 'UserController@index');
+

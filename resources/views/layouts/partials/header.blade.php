@@ -13,7 +13,7 @@
                 <input class="form-control js-user-search" placeholder="Search here people or pages..." type="text">
                 <button>
                     <svg class="olymp-magnifying-glass-icon">
-                        <use xlink:href="svg-icons/sprites/icons.svg#olymp-magnifying-glass-icon"></use>
+                        <use xlink:href="{{url('svg-icons/sprites/icons.svg#olymp-magnifying-glass-icon')}}"></use>
                     </svg>
                 </button>
             </div>
@@ -25,7 +25,7 @@
 
             <div class="control-icon more has-items">
                 <svg class="olymp-happy-face-icon">
-                    <use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use>
+                    <use xlink:href="{{url('svg-icons/sprites/icons.svg#olymp-happy-face-icon')}}"></use>
                 </svg>
                 <div class="label-avatar bg-blue">6</div>
 
@@ -50,7 +50,7 @@
                   <a href="#" class="accept-request">
                     <span class="icon-add without-text">
                       <svg class="olymp-happy-face-icon"><use
-                              xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
+                              xlink:href="{{url('svg-icons/sprites/icons.svg#olymp-happy-face-icon')}}"></use></svg>
                     </span>
                   </a>
 
@@ -166,7 +166,7 @@
 
             <div class="control-icon more has-items">
                 <svg class="olymp-chat---messages-icon">
-                    <use xlink:href="svg-icons/sprites/icons.svg#olymp-chat---messages-icon"></use>
+                    <use xlink:href="{{url('svg-icons/sprites/icons.svg#olymp-chat---messages-icon')}}"></use>
                 </svg>
                 <div class="label-avatar bg-purple">2</div>
 
@@ -275,7 +275,7 @@
 
             <div class="control-icon more has-items">
                 <svg class="olymp-thunder-icon">
-                    <use xlink:href="svg-icons/sprites/icons.svg#olymp-thunder-icon"></use>
+                    <use xlink:href="{{url('svg-icons/sprites/icons.svg#olymp-thunder-icon')}}"></use>
                 </svg>
 
                 <div class="label-avatar bg-primary">8</div>

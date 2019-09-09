@@ -6,6 +6,7 @@
 <body class="page-has-left-panels page-has-right-panels">
 <div id="app">
     @include('layouts.partials.loader')
+    @include('events.create')
 
 
     @include('layouts.partials.fixed_sidebar_left')

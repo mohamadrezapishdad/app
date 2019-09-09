@@ -1,5 +1,5 @@
 <!-- JS Scripts -->
-{{--<script src="{{asset('js/app.js')}}"></script>--}}
+<script src="{{asset('js/app.js')}}"></script>
 <script src="{{asset('js/jquery-3.2.1.js')}}"></script>
 <script src="{{asset('js/jquery.appear.js')}}"></script>
 <script src="{{asset('js/jquery.mousewheel.js')}}"></script>
